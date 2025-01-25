@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="about-page">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/about-us.png') }}" alt="About Us">
+        </div>
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>
+                Welcome to our website! We are passionate about creating stories for your children so that they enjoy a learning environment wrapped with fun.
+            </p>
+            <p>
+                Children’s imagination is sparked by stories that are engaging, creative, and visually 
+appealing. However, creating personalized stories for kids can be time-consuming, We are here to aid your child's development.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

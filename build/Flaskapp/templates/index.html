@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="landing-page">
+    <div class="background-image">
+        <button class="learn-more-btn" onclick="window.location.href='{{ url_for('learn_more') }}'">Learn More</button>
+    </div>
+</div>
+{% endblock %}

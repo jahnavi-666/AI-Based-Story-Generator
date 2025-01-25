@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                <li><a href="{{ url_for('our_work') }}">Our Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <div class="container my-5">
+        <div class="row text-center">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon1.png') }}" alt="Icon 1" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Play Ground</h5>
+                        <p class="card-text">Outdoor fun for active play and teamwork...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon2.png') }}" alt="Icon 2" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Music and Dance</h5>
+                        <p class="card-text"> Exploring rhythm and melodies...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon3.png') }}" alt="Icon 3" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Arts and Crafts</h5>
+                        <p class="card-text">Creativity with hands-on projects....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row text-center">
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon4.png') }}" alt="Icon 4" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Safe Transportation</h5>
+                        <p class="card-text"> Learning the importance of safety on the go...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon5.png') }}" alt="Icon 5" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Healthy Food</h5>
+                        <p class="card-text">Tasty, nutritious meals for growing bodies....</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/icon6.png') }}" alt="Icon 6" class="mb-3" style="width: 50px;">
+                        <h5 class="card-title">Educational Tour</h5>
+                        <p class="card-text"> Discovering new places to learn and explore...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
