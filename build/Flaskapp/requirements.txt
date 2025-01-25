@@ -1,6 +1,9 @@
-flask
 streamlit
-cohere
-Pillow
+Flask
+flask-cors
 transformers
+cohere
 gtts
+Pillow
+requests
+gunicorn
