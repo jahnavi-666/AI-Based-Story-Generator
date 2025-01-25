@@ -1,0 +1,7 @@
+flask
+streamlit
+python
+cohere
+Pillow
+transformers
+gtts
