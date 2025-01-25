@@ -1,0 +1,196 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 251, 251);
+    color: white;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logo img {
+    height: 60px;
+    width: 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(70, 229, 227);
+    font-size: 16px;
+}
+
+.background-image {
+    height: 90vh;
+    background: url('../images/background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-btn {
+    padding: 20px 30px;
+    font-size: 18px;
+    color: rgb(66, 191, 236);
+    background-color: rgb(252, 252, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: darkblue;
+}
+
+
+/* About Us page styles */
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for professionalism */
+}
+
+.about-content {
+    display: flex;
+    gap: 30px; /* Add spacing between image and text */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Professional shadow effect */
+}
+
+.about-text {
+    flex: 1;
+    color: #333; /* Professional dark text color */
+    font-family: Arial, sans-serif;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #004080; /* Blue accent for title */
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+/* Register/Login page styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f9f9f9;
+}
+
+.register-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-box h2 {
+    color: #004080;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #0066cc;
+}
+
+.card img {
+    margin-bottom: 15px;
+}
+.card {
+    border-radius: 10px;
+    background-color: #e9edf1; /* Light background */
+}
+.card-title {
+    font-weight: bold;
+}
+.card-text {
+    color: #6c757d; /* Muted text color */
+}
